@@ -35,7 +35,7 @@ const run_command = (command) => {
 const web_search = async (query) => {
   const url = "https://google-search72.p.rapidapi.com/search";
   const headers = {
-    "x-rapidapi-key": "d2157a0bd1msh405b1eb1151eed3p1f1975jsn33a0a44c4162",
+    "x-rapidapi-key": process.env.WEB_SEARCH_API_KEY,
     "x-rapidapi-host": "google-search72.p.rapidapi.com"
   };
   const params = { q: query, lr: "en-US", num: "10" };
